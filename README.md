@@ -1,6 +1,6 @@
-# lgoin_ui
+# maintenance_box_ui
 
-A new Flutter project.
+Just a practice flutter UI project.
 
 ## Getting Started
 
