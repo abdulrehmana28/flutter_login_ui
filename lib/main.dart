@@ -86,10 +86,12 @@ class MyApp extends StatelessWidget {
                   height: 30,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 30, right: 30),
+                  padding:
+                      const EdgeInsets.only(left: 30, right: 30, bottom: 15),
                   child: TextFormField(
                     decoration: InputDecoration(
                       hintText: 'Email',
+                      hintStyle: const TextStyle(fontFamily: 'Rubik Regular'),
                       fillColor: const Color(0xfff8f9fa),
                       filled: true,
                       prefixIcon: const Icon(
@@ -107,8 +109,31 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 30, right: 30),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      fillColor: const Color(0xfff8f9fa),
+                      filled: true,
+                      hintText: 'Password',
+                      hintStyle: const TextStyle(fontFamily: 'Rubik Regular'),
+                      prefixIcon: const Icon(
+                        Icons.lock_outline_rounded,
+                        color: Color(0xff4C5980),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: Color(0xffe4e7eb)),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: Color(0xffe4e7eb)),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+                ),
                 const SizedBox(
-                  height: 50,
+                  height: 60,
                 ),
                 Container(
                   width: 250,
